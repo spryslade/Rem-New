@@ -61,28 +61,28 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Add Raiden Shogun To Your Group ➕️",
-            url="t.me/ShogunXRobot?startgroup=true",
+            text="➕️ Add sʜᴀɴᴋs クインシー To Your Group ➕️",
+            url="t.me/ShanksRobot?startgroup=true",
         ),
     ],
     [
         InlineKeyboardButton(
             text="Chat",
-            url="t.me/TeamNexusX",
+            url="t.me/wanden_reich",
         ),
         InlineKeyboardButton(
             text="Network",
-            url="https://t.me/AogiriNetwork",
+            url="https://t.me/QuincyxNetwork",
         ),
     ],
     [
         InlineKeyboardButton(
             text="Support",
-            url="https://t.me/Scythe_Support",
+            url="https://t.me/kanao_Support",
         ),
         InlineKeyboardButton(
-            text="NGA",
-            url="https://t.me/New_Generation_Anime",
+            text="",
+            url="",
         ),
     ],
 ]
