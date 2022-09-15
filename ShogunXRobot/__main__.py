@@ -90,7 +90,7 @@ buttons = [
 
                     
 HELP_STRINGS = """
-Hey there! Myself [Raiden Shogun](https://telegra.ph/file/00acd39281f25937a0a0a.jpg).
+Hey there! Myself [sʜᴀɴᴋs クインシー](https://telegra.ph/file/3472458c0da43777870a2.jpg).
 Have a look at the following for an idea of some of the things I can help you with.
 *Main* commands available:
  ➛ /help: PM's you this message.
@@ -104,17 +104,17 @@ Have a look at the following for an idea of some of the things I can help you wi
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-HELP_IMG = "https://telegra.ph/file/00acd39281f25937a0a0a.jpg"
-JIN_IMG = "https://telegra.ph/file/e2034322c680ed63a0c4f.jpg"
+HELP_IMG = "https://telegra.ph/file/3472458c0da43777870a2.jpg"
+JIN_IMG = ""
 
 Saber_IMG = (
-      "https://telegra.ph/file/d9c46e3db8952c020256b.jpg",
-      "https://telegra.ph/file/9e9e1112a16894e7998cf.jpg",
-      "https://telegra.ph/file/060b79fec4a50f48d59ba.jpg",
+      "https://telegra.ph/file/1d42b5f807366181a4368.jpg",
+      "",
+      "",
       )
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Unknown](https://t.me/XUltim8)"""
+Click here to donate in [Rishu](https://t.me/CuteRishu)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -248,11 +248,11 @@ def start(update: Update, context: CallbackContext):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Nexus",
-                             url=f"https://t.me/Scythe_Support"),
+                             text="Quincy",
+                             url=f"https://t.me/kanao_Support"),
                        InlineKeyboardButton(
-                             text="Nexus",
-                             url="https://t.me/TeamNexusX")
+                             text="Quincy",
+                             url="https://t.me/wanden_reich")
                      ] 
                 ]
             ),
@@ -347,9 +347,9 @@ def Saber_about_callback(update, context):
     query = update.callback_query
     if query.data == "about_":
         query.message.edit_text(
-            text=f"[剣](https://telegra.ph/file/9e9e1112a16894e7998cf.jpg) Hey {escape_markdown(first_name)},"
+            text=f"[クインシー](https://telegra.ph/file/9e9e1112a16894e7998cf.jpg) Hey {escape_markdown(first_name)},"
               f"\n\n ➖➖➖➖➖➖➖➖➖➖➖➖➖"
-              f"\n\n Raiden Shogun  ➣ :-"
+              f"\n\n sʜᴀɴᴋs クインシー  ➣ :-"
               f"\n\n I Am An Anime Themed Advance Group Management Bot With A Lot Of Awesome Features."
               f"\n\n ➖➖➖➖➖➖➖➖➖➖➖➖➖"
               f"\n\n Check The Buttons To Know About Me More.*",
@@ -359,7 +359,7 @@ def Saber_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Nexus", url="t.me/TeamNexusX"
+                            text="Quincy", url="t.me/kanao_support"
                         ),
                         InlineKeyboardButton(
                             text="Developer", url="t.me/Xelcius"
@@ -438,7 +438,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Click Here", url="https://t.me/ShogunXRobot?start=help")
+                  InlineKeyboardButton(text="Click Here", url="https://t.me/ShanksRobot?start=help")
                   ]
                 ]
             ),
@@ -602,7 +602,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 5132611794 and DONATION_LINK:
+        if OWNER_ID != 5205602399 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -646,7 +646,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Waku Waku!!!](https://telegra.ph/file/060b79fec4a50f48d59ba.jpg)", parse_mode=ParseMode.MARKDOWN,
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[Nᴏᴡ Tʜᴀᴛ Yᴏᴜ Pᴏɪɴᴛᴇᴅ Tʜᴇ Gᴜɴ Aʀᴇ Yᴏᴜ Rᴇᴀᴅʏ Tᴏ Rɪsᴋ Yᴏᴜʀ Lɪғᴇ Fᴏʀ Iᴛ!!!](https://telegra.ph/file/52715f72b6d72144e5790.mp4)", parse_mode=ParseMode.MARKDOWN,
 
             reply_markup=InlineKeyboardMarkup(
 
@@ -658,7 +658,7 @@ def main():
 
                              text="[Off Topic Chat]",
 
-                             url=f"t.me/TeamNexusX"),
+                             url=f"t.me/wanden_reich"),
 
 
                      ] 
