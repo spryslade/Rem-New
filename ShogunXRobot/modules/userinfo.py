@@ -50,7 +50,7 @@ from ShogunXRobot.modules.helper_funcs.extraction import extract_user
 from ShogunXRobot import telethn
 from ShogunXRobot import pbot
 
-Raiden_IMG = "https://telegra.ph/file/9e9e1112a16894e7998cf.jpg"
+Raiden_IMG = "https://telegra.ph/file/320c1b09e06debc863d80.jpg"
 
 
 def no_by_per(totalhp, percentage):
@@ -243,10 +243,10 @@ def info(update: Update, context: CallbackContext):
     [
                         InlineKeyboardButton(
                              text="Health",
-                             url="https://t.me/RaidenSanLogs/11"),
+                             url="https://t.me/Shanks_updates/11"),
                        InlineKeyboardButton(
                              text="Disaster",
-                             url="https://t.me/RaidenSanLogs/12"),
+                             url="https://t.me/shanks_updates/12"),
                     ],
     ]
     user_id = extract_user(update.effective_message, args)
@@ -272,7 +272,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Getting Your Bounty...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══「<b>• Appraisal Results •</b> 」\n\n"
@@ -319,22 +319,22 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n• Disaster Level: Master"
+        text += "\n\n• Disaster Level: Yonko"
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n• Disaster Level: Dev Ka Choda"
+        text += "\n\n• Disaster Level: Fleet admiral"
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n• Disaster Levl: Sudo Ka Choda"
+        text += "\n\n• Disaster Levl: Admiral"
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n• Disaster Level: Sword Demon"
+        text += "\n\n• Disaster Level: Vice Admiral"
         disaster_level_present = True
     elif user.id in TIGERS:
-        text += "\n\n• Disaster Level: Sword Slasher"
+        text += "\n\n• Disaster Level: Rear Admiral"
         disaster_level_present = True
     elif user.id in WOLVES:
-        text += "\n\n• Disaster Level: Sword Slasher"
+        text += "\n\n• Disaster Level: Rear Admiral"
         disaster_level_present = True
     try:
         user_member = chat.get_member(user.id)
@@ -347,7 +347,7 @@ def info(update: Update, context: CallbackContext):
                 custom_title = result["custom_title"]
                 text += f"\n\n• Title: <b>{custom_title}</b>"
                 
-        text += f"\n\n╘══「 •By @ShogunXRobot• 」"
+        text += f"\n\n╘══「 •By @ShanksRobot• 」"
                 
     except BadRequest:
         pass
@@ -440,24 +440,24 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 Raiden 剣 Statistics 」*\n\n"
+    status = "*╒═══「 sʜᴀɴᴋs クインシー Statistics 」*\n\n"
     status += "*➢ System Start time:* " + str(uptime) + "\n"
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         update.effective_message.reply_photo(
             Saber_IMG,
             status
-            + "\n*Raiden 剣 Statistics*:\n"
+            + "\n*sʜᴀɴᴋs クインシー Statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[剣 Support](https://t.me/{SUPPORT_CHAT}) | [剣 Updates](https://t.me/TeamNexusX)\n\n"
-            + "\n╘══「 By [The Aogiri](https://t.me/AogiriNetwork) 」\n",
+            + f"\n\n[剣 Support](https://t.me/{SUPPORT_CHAT}) | [ Updates](https://t.me/Shanks_updates)\n\n"
+            + "\n╘══「 By [The Quincy](https://t.me/QuincyxNetwork) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="t.me/Scythe_Support")
+                             url="t.me/kanao_Support")
                      ] 
                 ]
             ),
@@ -467,12 +467,12 @@ def stats(update, context):
             (
                 (
                     (
-                        "\n*Raiden 剣 Statistics*:\n"
+                        "\n*sʜᴀɴᴋs クインシー Statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n [剣 Support](https://t.me/{SUPPORT_CHAT}) | [剣 Updates](https://t.me/TeamNexusX)\n\n"
+                    + f"\n\n [ Support](https://t.me/{SUPPORT_CHAT}) | [ Updates](https://t.me/shanks_updates)\n\n"
                 )
-                + "╘══「 By [The Aogiri](https://t.me/AogiriNetwork) 」\n"
+                + "╘══「 By [The Quincy](https://t.me/QuincyxNetwork) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -480,7 +480,7 @@ def stats(update, context):
                   [                  
                        InlineKeyboardButton(
                              text="Repo",
-                             url="t.me/Scythe_Support")
+                             url="t.me/kanao_Support")
                      ] 
                 ]
             ),
@@ -533,7 +533,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust the Ackermans to set my bio.",
+                "Erm... yeah, I only trust the Admirals to set my bio.",
             )
             return
 
