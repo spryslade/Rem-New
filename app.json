@@ -21,17 +21,17 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": "5699376101:AAGtSMEy8LgqixXw2RV-Blyh7B_ZI-FCako"
+         "value": ""
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "10872193"
+         "value": ""
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "7a2c777e52479d13fb1adb29944130cf"
+         "value": ""
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -41,7 +41,7 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "5205602399"
+         "value": ""
       },
       "INFOPIC": {
          "description": "mmmm",
@@ -50,7 +50,7 @@
       }, 
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "CuteRishu"
+         "value": ""
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
@@ -60,12 +60,12 @@
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-1001659204080"
+         "value": ""
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-1001659204080"
+         "value": ""
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
@@ -85,7 +85,7 @@
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
          "required": false,
-         "value": "bvd9VQrozhNpGKOXd6UeKX0zvnP8SxW21HERnBQ1CJGgQGb~6vQzwfgb5rrBs58Y"
+         "value": ""
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -156,17 +156,17 @@
       "AI_API_KEY": {
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
-         "value": "HRINZL-XDAQVW-AZYEPT-ZZJZSH-ARQ"
+         "value": ""
    },      
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
-         "value": "CAACAgQAAx0CU_rCTAABAczQXyBOv1TsVK4EfwnkCUT1H0GCkPQAAtwAAwEgTQaYsMtAltpEwhoE"
+         "value": ""
       },
       "MONGO_DB_URI": {
          "description": "Your Mongo DB",
          "required": false,
-         "value": "mongodb+srv://xelcius:raizel~97@cluster0.gj9j8.mongodb.net/cluster0?retryWrites=true&w=majority"
+         "value": ""
       },      
       "WALL_API": {
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
